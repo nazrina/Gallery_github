@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>AnyChart Map Sample with PHP</title>
+		<script type="text/javascript" language="javascript" src="../anychart_files/js/AnyChart.js"></script>
+	</head>
+	<body>
+		<h1>AnyChart Map Sample with PHP</h1>
+		<p>Please see map.php code to see how xml for AnyChart Maps is created using PHP.</p>
+		<div id="map"></div>
+		<script type="text/javascript" language="javascript">
+			//<![CDATA[
+				var chart = new AnyChart('../anychart_files/swf/AnyChart.swf');
+				chart.setXMLFile('map.php');
+				chart.write('map');
+			//]]>
+		</script>
+	</body>
+</html>

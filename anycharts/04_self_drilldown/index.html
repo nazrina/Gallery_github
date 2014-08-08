@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script type="text/javascript" language="javascript" src="../anychart_files/js/AnyChart.js"></script>
+
+	<script type='text/javascript' language='javascript'>
+	 //<![CDATA[
+		 AnyChart.swfFile='../anychart_files/swf/AnyChart.swf';
+	 //]]>
+        </script>
+	<title>AnyChart PHP Self Drill Down Sample</title>
+</head>
+<body>
+	<h1>AnyChart PHP Self Drill Down Sample</h1>
+	<p>In this sample AnyChart Flash Chart is used to create drilldown chart.</p>
+	<p>Click on Pie Slices to load chart with details, click "Back" button to return
+        to the main chart.</p>
+	<table border="1">
+		<tr>
+			<th colspan="2" align="Center">Sample Interactive Report</th>
+		</tr>
+		<tr>
+			<td align="Right">
+				<!-- Load pie.php xml on button click "pie" is set as js object name below -->
+				<input type="submit" value="Load Pie Chart" onclick="chart.setXMLFile('pie.php');"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id='chart'></div>
+				<script type='text/javascript' language='javascript'>
+				 //<![CDATA[
+				 var chart = new AnyChart();
+				 chart.width = '400';
+				 chart.height = '400';
+				 chart.setXMLFile('pie.php');
+				 chart.write('chart');
+				 //]]>
+				</script>			
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

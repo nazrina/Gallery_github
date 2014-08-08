@@ -1,0 +1,37 @@
+<templates>
+	<template name="chartTemplate">
+		<chart>
+			<chart_settings>
+			  <title>
+				<text>Revenue by Years</text>
+			  </title>
+			  <chart_background>
+				<corners type="Square"/>
+			  </chart_background>
+			  <axes>
+			  	<x_axis>
+			  		<title>
+			  			<text>Year</text>
+			  		</title>
+			  	</x_axis>
+			  	<y_axis>
+			  		<title>
+			  			<text>Volume</text>
+			  		</title>
+			  		<labels>
+			  			<format>{%Value}{numDecimals:0}$</format>
+			  		</labels>
+			  	</y_axis>
+			  </axes>
+			</chart_settings>
+			<data_plot_settings>
+				<bar_series>
+					<tooltip_settings enabled="true">
+						<format><![CDATA[Year: {%Name}{enabled:false}
+Volume: {%YValue}$]]> </format>
+					</tooltip_settings>
+				</bar_series>
+			</data_plot_settings>
+		</chart>
+	</template>
+</templates>

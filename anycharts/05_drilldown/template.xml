@@ -1,0 +1,19 @@
+<chart>
+	<data_plot_settings>
+		<pie_series>
+		  <label_settings mode="Outside" text_align="Center" enabled="True"/>
+			<tooltip_settings enabled="true">
+				<background>
+					<fill opacity="0.8"/>
+					<effects enabled="false"/>
+					<border>
+						<effects enabled="false"/>
+					</border>
+					<corners type="Rounded" all="20"/>
+				</background>
+				<format>{%YPercentOfSeries}{numDecimals:0}%</format>
+			</tooltip_settings>			
+		  <connector enabled="True" opacity="1" thickness="1" />
+		</pie_series>
+	</data_plot_settings>
+</chart>
